@@ -92,9 +92,6 @@ public class MainActivity extends AppCompatActivity {
                         Toast t = Toast.makeText(getApplicationContext(),
                                 "Login Gagal", Toast.LENGTH_LONG);
 
-                        //membuat variabel toast dengan variabel nama dan password
-                        Toast toast = Toast.makeText(getApplicationContext(),
-                                "email anda" + nama + "dan Password anda: " + password + "", Toast.LENGTH_LONG);
 
                         //menampilkan toast
                         t.show();
