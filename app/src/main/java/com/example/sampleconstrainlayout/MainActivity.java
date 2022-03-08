@@ -27,13 +27,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Menghubungkan variabel btnLogin dengan componen button pada Layout
-        btnLogin=findViewById(R.id.btSignin);
+        btnLogin = findViewById(R.id.btSignin);
 
         //Menghubungkan variabel edemail dengan componen button pada layout
-        edemail=findViewById(R.id.edEmail);
+        edemail = findViewById(R.id.edEmail);
 
         //Menghubungkan variabel edpassword dengan componen button pada Layout
-        edpassword=findViewById(R.id.edPassword);
+        edpassword = findViewById(R.id.edPassword);
 
         //membuat fungsi onclik pada button btnLogin
         btnLogin.setOnClickListener(new View.OnClickListener() {
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
                         b.putString("b", password.trim());
 
                         //membuat objek intent berpindah activity dari mainactivity ke ActivityHasil
-                        Intent i = new Intent(getApplicationContext(), ActivityHasil.class);
+                        Intent i = new Intent(getApplicationContext(), ActivityKedua.class);
 
                         //memasukkan bundle kedalam intent untuk dikirimkan ke ActivityHasil
                         i.putExtras(b);
