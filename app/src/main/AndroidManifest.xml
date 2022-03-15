@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SampleConstrainLayout">
-        <activity android:name=".ActivityKedua"
+        <activity
+            android:name=".DaftarActivity"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".ActivityKedua"
             android:parentActivityName=".MainActivity"
             android:label="@string/label12"></activity>
 
