@@ -67,7 +67,7 @@ public class home_activity extends AppCompatActivity implements PopupMenu.OnMenu
         //Membuat event dari List onclick
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id)
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id){
 
             //Deklarasi variabel nama yang berisi item yang diklik
             String nama = classNamaArrayList.get(position).getName();
@@ -77,7 +77,7 @@ public class home_activity extends AppCompatActivity implements PopupMenu.OnMenu
             bundle.putString("a", nama.trim());
 
             //Membuat objek popup menu
-            PopupMenu pm = new PopupMenu(getApplicationContext(),View);
+            PopupMenu pm = new PopupMenu(getApplicationContext(),view);
 
             // Membuat event untuk popup menu ketika dipilih
             pm.setOnMenuItemClickListener(home_activity.this);
@@ -91,8 +91,8 @@ public class home_activity extends AppCompatActivity implements PopupMenu.OnMenu
     });
 }
 //event yang terjadi ketika menu dipilih
-@Override
-public boolean onMenuItemClick(MenuItem menuItem) {
+ @Override
+ public boolean onMenuItemClick(MenuItem menuItem) {
     switch (menuItem.getItemId())
     {
 
